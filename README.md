@@ -63,3 +63,18 @@ GitHub: https://github.com/TDGarden/stock-watch 欢迎PR、star
   // 配置轮询请求最新数据的时间间隔
   "stock-watch.updateInterval": 10000
 ```
+---
+干净的配置模版
+```json
+  "stock-watch.stocks": {
+    "000001":{
+      "price": 10,
+      "count": 1000,
+      "message":{
+        "point": 11, 
+        "text":"涨停了，庆祝吧"
+      }
+    }
+  },
+  "stock-watch.updateInterval": 10000
+```
