@@ -30,7 +30,7 @@
         "configuration": {
             "properties": {
                 "stock-watch.stocks": {
-                    "type": : [
+                    "type": [
                       "object",
                       "array"
                     ],
