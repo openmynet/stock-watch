@@ -78,3 +78,4 @@ GitHub: https://github.com/TDGarden/stock-watch 欢迎PR、star
   },
   "stock-watch.updateInterval": 10000
 ```
+![样例](./preview.png)
