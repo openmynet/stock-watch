@@ -48,7 +48,7 @@ function handleConfigChange(){
     timer && clearInterval(timer);
     const codes = getStockCodes();
     Object.keys(statusBarItems).forEach((item) => {
-        if(codes[item]){
+        if(!codes[item]){
             statusBarItems[item].hide();
             statusBarItems[item].dispose();
             delete statusBarItems[item];
