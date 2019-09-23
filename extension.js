@@ -7,7 +7,7 @@ const baseUrl = 'https://gupiao.baidu.com/api/rails/stockbasicbatch?stock_code='
 const baseUrlSina ='https://hq.sinajs.cn/list='
 let statusBarItems = {};
 let stockCodes = {}; 
-
+let inited = false;
 // let stockCodes = {
 //   code: {
 //     assets: 0,
@@ -48,12 +48,13 @@ function handleConfigChange(){
     timer && clearInterval(timer);
     const codes = getStockCodes();
     Object.keys(statusBarItems).forEach((item) => {
-        if(codes.indexOf(item) === -1){
+        if(codes[item]){
             statusBarItems[item].hide();
             statusBarItems[item].dispose();
             delete statusBarItems[item];
         }
     });
+    inited = false;
     init();
 }
 
